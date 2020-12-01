@@ -1,22 +1,24 @@
 import React from "react"
+import Header from "../components/header"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+const Home = () => {
+  return (
+    <div style={{ margin: `3rem auto`, maxWidth: 600 }}>
+      <Link to="/contact">Contact</Link>
+      <Link to="/about">About</Link>
+      <Link to="/work">Work</Link>
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+      <Header headerText="Hello Gatsby" />
+      <div>
+        <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
+        <p>
+          What do I like to do? Lots of course but definitely enjoy building
+          websites.
+        </p>
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+  )
+}
 
-export default IndexPage
+export default Home

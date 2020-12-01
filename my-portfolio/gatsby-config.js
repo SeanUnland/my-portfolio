@@ -7,8 +7,9 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-typography`,
       options: {
+        pathToConfigModule: `src/utils/typography`,
         name: `images`,
         path: `${__dirname}/src/images`,
       },
