@@ -1,3 +1,9 @@
+const dotenv = require("dotenv")
+
+if (process.env.NODE_ENV !== "production") {
+  dotenv.config()
+}
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -14,6 +20,22 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `1ldnc8hhfl5q`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    // {
+    //   resolve: `gatsby-source-contentful`,
+    //   options: {
+    //     spaceId: `1ldnc8hhfl5q`,
+    //     accessToken: `2W6VTOHzLvc9OjFwWnKeM3MxPzIjSOi__E8Q3sXZ6Jk`,
+    //     host: `preview.contentful.com`,
+    //   },
+    // },
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
