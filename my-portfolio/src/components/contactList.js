@@ -2,32 +2,32 @@ import React from "react"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
-import "./aboutMe.css"
+import "bootstrap/dist/css/bootstrap.min.css"
 
-const AboutMe = props => {
+const ContactList = props => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulAboutMe {
+      allContentfulContactMe {
         edges {
           node {
-            bio
-            name
-            languages {
-              languages
+            gitHub {
+              raw
+            }
+            linkedIn {
+              raw
             }
           }
         }
       }
     }
   `)
-
   return (
     <div>
       <p>
-        {data.allContentfulAboutMe.edges.map(edge => {
+        {data.allContentfulContactMe.edges.map(edge => {
           return (
             <div>
-              <ul>{edge.node.languages.languages}</ul>
+              <a>{edge.node[1]}</a>
             </div>
           )
         })}
@@ -36,4 +36,4 @@ const AboutMe = props => {
   )
 }
 
-export default AboutMe
+export default ContactList
