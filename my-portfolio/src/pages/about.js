@@ -13,6 +13,9 @@ export default function About() {
             node {
               bio
               name
+              languages {
+                languages
+              }
             }
           }
         }
@@ -28,6 +31,8 @@ export default function About() {
             return (
               <div>
                 <h3>{edge.node.bio}</h3>
+                <h3>What I'm Proficient In</h3>
+                <ul>{edge.node.languages.languages}</ul>
               </div>
             )
           })}

@@ -7,7 +7,8 @@ const Work = () => {
   return (
     <div style={{ margin: `3rem auto`, maxWidth: 600 }}>
       <Layout>
-        <Header headerText="Works" />{" "}
+        <Header headerText="Works I've Made" />{" "}
+        <a href="https://mini-pop.netlify.app/">Mini-Pop</a>
       </Layout>
     </div>
   )
