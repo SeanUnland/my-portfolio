@@ -3,6 +3,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 
 import Header from "../components/header"
 import Layout from "../components/layout"
+import AboutMe from "../components/aboutMe"
 
 export default function About() {
   const data = useStaticQuery(
@@ -26,13 +27,14 @@ export default function About() {
     <div style={{ margin: `3rem auto`, maxWidth: 600 }}>
       <Layout>
         <Header headerText="Who Am I?" />
+        {/* <AboutMe /> */}
         <p>
           {data.allContentfulAboutMe.edges.map(edge => {
             return (
               <div>
                 <h3>{edge.node.bio}</h3>
                 <h3>What I'm Proficient In</h3>
-                <ul>{edge.node.languages.languages}</ul>
+                <AboutMe />
               </div>
             )
           })}
