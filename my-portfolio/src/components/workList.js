@@ -39,12 +39,28 @@ const WorkList = props => {
             <Card.Title>Sticky Task</Card.Title>
             <Card.Text>
               A task manager app that enables a user to assign and delete tasks.
+              <br />
+              Built with React and Express
             </Card.Text>
             <Button
               href="https://sticky-task.netlify.app/"
               variant="outline-dark"
             >
               Sticky Task
+            </Button>
+          </Card.Body>
+        </Card>
+      </div>
+      <div id="tunrApp">
+        <Card style={{ width: "18rem" }}>
+          <Card.Img variant="top" src="https://i.imgur.com/SO56oPA.jpg" />
+          <Card.Body>
+            <Card.Title>TUNR</Card.Title>
+            <Card.Text>
+              A music playlist app built using React and Ruby on Rails
+            </Card.Text>
+            <Button href="https://tunr-su.netlify.app/" variant="outline-dark">
+              TUNR
             </Button>
           </Card.Body>
         </Card>

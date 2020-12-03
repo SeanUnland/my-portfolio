@@ -3,6 +3,7 @@ import Header from "../components/header"
 import Layout from "../components/layout"
 import NavBar from "../components/navBar"
 import CarouselHome from "../components/carouselHome"
+import ProfileImage from "../components/profileImage"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import { Link } from "gatsby"
@@ -12,8 +13,12 @@ const Home = () => {
     <div style={{ margin: `3rem auto`, maxWidth: 600 }}>
       <NavBar />
       <Layout>
-        <CarouselHome />
+        <ProfileImage />
+        <Header headerText="Sean Unland" />
+        <Header headerText="Full Stack Developer" />
         <Header headerText="" />
+        <CarouselHome />
+
         <div>
           <h1></h1>
           <p></p>

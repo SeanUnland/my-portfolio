@@ -8,8 +8,8 @@ const CarouselHome = props => {
       <Carousel>
         <Carousel.Item>
           <img
-            className="d-block w-100"
-            src="https://i.imgur.com/yjxYvHN.jpg"
+            className="d-block w-100 h-50"
+            src="https://i.imgur.com/LCgPuVZ.jpg"
             alt="First slide"
           />
           <Carousel.Caption>
@@ -20,7 +20,7 @@ const CarouselHome = props => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://i.imgur.com/OP54uJZ.jpg"
+            src="https://i.imgur.com/2s4su3n.jpg"
             alt="Third slide"
           />
 
@@ -32,7 +32,7 @@ const CarouselHome = props => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://i.imgur.com/f6oZrgy.jpg"
+            src="https://i.imgur.com/PYnvuuV.jpg"
             alt="Third slide"
           />
 

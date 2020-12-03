@@ -1,6 +1,5 @@
-import { Link } from "gatsby"
-
 import React from "react"
+import "./header.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 const Header = props => {
